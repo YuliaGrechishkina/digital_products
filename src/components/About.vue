@@ -38,7 +38,7 @@ export default {
     flex-direction: row;
     height: 800px;
     width: 100%;
-    padding-top: 50px;
+    
 }
 
 .about__img {
@@ -84,8 +84,8 @@ export default {
     text-decoration: none;
     color: #7D7A7C;
     font-style: italic;
-    width: 195px;
-    height: 50px;
+    width: 95px;
+    height: 25px;
     border: 1px solid #7D7A7C;
     padding: 12px;
     text-align: center;
@@ -95,6 +95,14 @@ export default {
     background-color: #7D7A7C;
     color: #FEFBFC;
 }
+
+ .about__img:hover {
+            background-image: none;
+            color: #9F9ACF;
+            border-color: #9F9ACF;
+            background-color: rgba(201, 195, 255, 0.7);
+        }
+
 </style>
 
 <script>

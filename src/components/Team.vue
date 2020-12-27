@@ -8,9 +8,9 @@
 
                 <div class="team__items">
                     <div class="team_slider">
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
-                            <ul class="uk-slider-items uk-grid">
-                                <li class="uk-width-3-4">
+                        <div class="team_slider-card">
+                            <ul class="team_slider-list">
+                                <li class="team_slider-item">
                                     <div class="slide">
                                         <div class="slide_item">
                                             <div class="slide_item-person">
@@ -37,15 +37,63 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="uk-width-3-4">
-                                
+                                <li class="team_slider-item">
+                                 <div class="slide">
+                                        <div class="slide_item">
+                                            <div class="slide_item-person">
+                                                <div class="slide_item-photo">
+                                                    <img src="@/assets/team-slider2.jpeg" alt=" miguel " class="team__photo">
+                                                </div>
+                                                <h3 class="team__name ">Jackie Carroll</h3>
+                                                <span class="team__skills ">Art Director</span>
+                                                <div class=" team__wrap-social">
+                                                    <a href="# " class="team__social-link ">
+                                                        <i class="fab fa-linkedin-in "></i>
+                                                    </a>
+                                                    <a href="# " class="team__social-link ">
+                                                        <i class="fab fa-google-plus-g "></i>
+                                                    </a>
+                                                    <a href="# " class="team__social-link">
+                                                        <i class="fab fa-facebook-f "></i>
+                                                    </a>
+                                                    <a href="# " class="team__social-link">
+                                                        <i class="fab fa-twitter "></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="uk-width-3-4">
-                                
+                                 <li class="team_slider-item">
+                                 <div class="slide">
+                                        <div class="slide_item">
+                                            <div class="slide_item-person">
+                                                <div class="slide_item-photo">
+                                                    <img src="@/assets/team-slider3.jpeg" alt=" miguel " class="team__photo">
+                                                </div>
+                                                <h3 class="team__name ">Jackie Carroll</h3>
+                                                <span class="team__skills ">Designer</span>
+                                                <div class=" team__wrap-social">
+                                                    <a href="# " class="team__social-link ">
+                                                        <i class="fab fa-linkedin-in "></i>
+                                                    </a>
+                                                    <a href="# " class="team__social-link ">
+                                                        <i class="fab fa-google-plus-g "></i>
+                                                    </a>
+                                                    <a href="# " class="team__social-link">
+                                                        <i class="fab fa-facebook-f "></i>
+                                                    </a>
+                                                    <a href="# " class="team__social-link">
+                                                        <i class="fab fa-twitter "></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
-                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            <a class="team_slider-link" href="#" ></a>
+                            <a class="team_slider-link" href="#" ></a>
                         </div>
                     </div>
                 </div>
@@ -62,15 +110,14 @@
     flex-direction: column;
     height: 800px;
     width: 100%;
-    padding-top: 70px;
-
-}
+    }
 
 .team__header {
-        display: flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     
 } 
 
@@ -79,21 +126,102 @@
     text-transform: uppercase;
 font-size:36px;
 font-weight: bold;
+margin-bottom: 170px;
 }
 
 .slide{
    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row; 
+    flex-direction: column; 
 }
 
 .team__photo{
    width:240px;
    height: 240px;
    border-radius: 50%;
-   border: 5px solid  #EBEBEB;
+   border: 10px solid  #EBEBEB;
 }
+
+.team_slider-list li{
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team_slider-item{
+    margin-right: 30px;
+}
+
+.team_slider-item:last-child{
+    margin-right: 0;
+}
+
+.slide_item{
+background-color: #fff;
+color: #9F9ACF;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 350px;
+height: 300px;
+position: relative;
+}
+
+.slide_item-photo{
+    position: absolute;
+    top: -45%;
+    left: 13.5%;
+   
+}
+
+.team__name{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #9F9ACF;
+    font-weight: bold;
+    padding: 125px 80px 0;
+}
+
+.team__skills {
+ font-size: 24px;
+       color:#665F60;
+    font-style: italic;
+    padding: 0 87px 0;
+    margin-bottom: 50px;
+}
+
+.team__wrap-social{
+background-color: #9F9ACF;
+height: 70px;
+width: 350px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.team__social-link{
+text-decoration: none;
+width: 35px;
+height: 35px;
+background-color: #fff;
+border-radius: 50%;
+margin-right: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+color:  #9F9ACF;
+}
+
+.team__social-link:hover{
+ text-decoration: none; 
+   color: #9F9ACF;
+   background-color: #362e7b;
+}
+
 </style>
 
 

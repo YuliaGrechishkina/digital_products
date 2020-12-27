@@ -45,7 +45,7 @@
             flex-direction: row;
             height: 800px;
             width: 100%;
-            padding-top: 90px;
+           
         }
         
         .service__item {
