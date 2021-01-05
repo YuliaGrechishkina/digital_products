@@ -21,7 +21,7 @@
    </template>
 
 <script>
-     window.onscroll = function() {
+    window.onscroll = function() {
     const scrolled = window.pageYOffset || document.documentElement.scrollTop;
     document.getElementById('fixedNav').style.backgroundColor = scrolled == 0 ? "rgba(1201, 195, 255,0)" : "rgba(201, 195, 255, 0.7)";
 }
