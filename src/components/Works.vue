@@ -1,7 +1,6 @@
 <template>
-  <div class="works">
-    <div class="works__wrapper">
-      <div class="works__header">
+<div class="works">
+         <div class="works__header">
         <svg
           width="40"
           height="60"
@@ -19,8 +18,8 @@
         </svg>
         <h2 class="works__header-title">Recent works</h2>
       </div>
-      <div class="works__slider">
-        <VueSlickCarousel :arrows="true" :dots="true">
+          <div class="works__slider">
+    <VueSlickCarousel :arrows="true" :dots="true">
           <div class="works_slider-item">
             <img src="@/assets/work-slider1.jpg" alt="" />
           </div>
@@ -34,21 +33,23 @@
             <img src="@/assets/work-slider2.jpg" alt="" />
           </div>
         </VueSlickCarousel>
+          </div>
+          <a href="#" class="works__btn">View Gallery</a>
       </div>
-      <a href="#" class="works__btn">View Gallery</a>
-    </div>
-  </div>
 </template>
 
 <script>
+
+export default {
+  name: "Works",
+  props: {
+    msg: String,
+  }, components: {VueSlickCarousel},
+};
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
-export default {
-  name: "Works",
-  components: { VueSlickCarousel },
-};
 </script>
 
 <style scoped>
@@ -60,17 +61,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 1000px;
+  height: 1000px;
   width: 100%;
-}
-
-.works__wrapper {
-    width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+   flex-direction: column;
 }
 
 .works__header {
@@ -78,8 +71,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
+ flex-direction: column;
+  
 }
 
 .works__header-title {
@@ -91,17 +84,11 @@ export default {
 }
 
 .works__slider {
- width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.works_slider-item {
-  width: 550px;
-  height: 730px;
-}
-
+ width: 730px;
+  height: 550px;
+ 
+  }
+    
 .works__btn {
   text-decoration: none;
   width: 150px;
@@ -126,13 +113,5 @@ export default {
   background-color: #585288;
   color: #ffffff;
 }
-</style>
 
-<script>
-export default {
-  name: "Works",
-  props: {
-    msg: String,
-  },
-};
-</script>
+</style>

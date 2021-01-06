@@ -64,7 +64,4 @@ export default {
     msg: String
   }
 }
-
-
-
 </script>
